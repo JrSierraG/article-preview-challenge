@@ -7,7 +7,7 @@
     <title>Article Preview Component</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./static/style.css">
 </head>
 
 <body>
@@ -22,10 +22,27 @@
                 <figure class="card-avatar">
                     <img src="images/avatar-michelle.jpg" alt="avatar-michelle">
                 </figure>
-                <span>Michelle Appleton <br><small>28 Jun 2020</small></span>
+                <span>Michelle Appleton <br><span>28 Jun 2020</span></span>
+                <div class="share" id="btnShare">
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <span>share</span>
+            <div>
+                <a href="">
+                    <img src="./images/icon-facebook.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./images/icon-twitter.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./images/icon-pinterest.svg" alt="">
+                </a>
             </div>
         </div>
     </div>
+    <script src="/static/sript.js"></script>
 </body>
 
 </html>

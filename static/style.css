@@ -1,0 +1,123 @@
+:root {
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    background-color: var(--LightGrayishBlue);
+    margin: 0;
+}
+
+.card {
+    /* border: 1px solid red; */
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 90px 30px;
+}
+
+.card-img {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.card-img img {
+    max-width: 100%;
+}
+
+.card-body {
+    padding: 0 30px;
+}
+
+.card-title,
+.cita span {
+    font-weight: 700;
+    color: var(--VeryDarkGrayishBlue);
+}
+
+.card-body p,
+.cita span span {
+    font-weight: 500;
+    color: var(--GrayishBlue);
+}
+
+.cita {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    /*Aun no soportado en todos los navegadores*/
+    /* gap: 10px; */
+    margin-right: 10px;
+    margin-top: 5px;
+    padding-bottom: 15px;
+}
+
+.card-avatar {
+    display: inline-block;
+    width: 40px;
+    margin: inherit;
+}
+
+.card-avatar img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.share {
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: auto;
+    border-radius: 50%;
+    background-color: var(--LightGrayishBlue);
+    background-image: url(../images/icon-share.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.share.activate {
+    background-color: var(--DesaturatedDarkBlue);
+    background-image: url(../images/icon-shareActivate.svg);
+}
+
+.modal a {
+    text-decoration: none;
+}
+
+.modal a:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.modal {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    height: 60px;
+    width: auto;
+    color: var(--GrayishBlue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 11px;
+    background-color: var(--VeryDarkGrayishBlue);
+}
+
+.modal span {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
