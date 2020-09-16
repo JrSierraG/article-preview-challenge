@@ -28,6 +28,7 @@ body {
 
 .card-img img {
     max-width: 100%;
+    height: auto;
 }
 
 .card-body {
@@ -120,4 +121,45 @@ body {
 
 .modal.show {
     display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        overflow: initial;
+    }
+    .card-img {
+        margin: 0;
+        padding: 0;
+    }
+    .modal {
+        position: absolute;
+        z-index: 5;
+        bottom: 35%;
+        left: 76%;
+        display: none;
+        align-items: center;
+        height: 50px;
+        width: 220px;
+        border-radius: 5px;
+    }
+    .modal::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: var(--VeryDarkGrayishBlue) transparent transparent transparent;
+    }
 }
